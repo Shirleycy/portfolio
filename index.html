@@ -271,21 +271,21 @@
                             <ul class="text-slate-400 list-disc list-inside space-y-3">
                                 <li>
                                 <span class="font-semibold text-slate-300">專案動機：</span>
-                                傳統模型難以捕捉股市的非線性動態關係，本專案旨在利用圖神經網路 (GCN) 提升預測準確性。
+                                股市的變化非常複雜，傳統模型很難抓到股票之間那種「今天 A 漲了，明天 B 可能會跟著漲」的連動關係。本專案旨在結合圖神經網路 (GNN) 與強化學習，以提升股票預測的精準度與自動決策能力。
                                 </li>
                                 <li>
                                 <span class="font-semibold text-slate-300">技術實現：</span>
                                 <ul class="list-disc list-inside ml-6 space-y-2">
-                                    <li><span class="font-semibold">自動化交易流程：</span> 開發 Python 自動化腳本，實現台股即時資料擷取、模型預測與自動下單。</li>
-                                    <li><span class="font-semibold">資料工程：</span> 每日自動化清洗與爬取股價資料，並建置 SQL 資料庫進行高效能管理與查詢。</li>
-                                    <li><span class="font-semibold">模型建置：</span> 運用 PyTorch 訓練圖神經網路 (GCN)，將漲跌機率輸出轉換為「買/賣/觀望」的交易決策。</li>
+                                    <li><span class="font-semibold">資料工程與圖建置：</span> 開發 Python 自動化腳本，每日爬取並清洗台股資料，並利用「格蘭傑因果檢定」動態建構股票之間的影響關係圖（即鄰接矩陣）。</li>
+                                    <li><span class="font-semibold">模型建置與決策：</span> 運用 PyTorch 訓練圖神經網路 (GNN)，預測隔日股價的漲、跌、或不變的機率。接著，透過強化學習，將模型輸出轉換為「買進/賣出/觀望」的最佳交易決策。</li>
+                                    <li><span class="font-semibold">自動化交易流程：</span> 成功串接上述流程，建構一套從資料擷取、模型預測到自動下單的完整系統。</li>
                                 </ul>
                                 </li>
                                 <li>
                                 <span class="font-semibold text-slate-300">亮點成就：</span>
                                 <ul class="list-disc list-inside ml-6 space-y-2">
-                                    <li>成功建構一套從資料擷取、模型預測到自動交易的自動化系統。</li>
-                                    <li>驗證了 GCN 模型在捕捉市場非線性關係上的潛力，研究成果獲 IEEE PIC 國際會議接受並發表。</li>
+                                    <li>成功建構一套從數據處理、模型開發到自動化交易的完整系統。</li>
+                                    <li>本研究成果已獲國際會議 IEEE PIC 接受並發表，驗證了 GNN 在捕捉市場動態關係上的潛力。</li>
                                 </ul>
                                 </li>
                             </ul>
@@ -320,7 +320,7 @@
                         <ul class="text-slate-400 list-disc list-inside space-y-3">
                             <li>
                             <span class="font-semibold text-slate-300">專案動機：</span>
-                            針對推行近二十年的戒癮治療政策，缺乏中長期的量化成效評估，本研究旨在填補此缺口。
+                            台灣的毒品戒癮治療，成效到底好不好？台灣政府推行近二十年的戒癮治療政策，缺乏中長期的量化成效評估，本研究旨在填補此缺口。
                             </li>
 
                             <li>
@@ -328,7 +328,7 @@
                             <ul class="list-disc list-inside ml-6 space-y-2">
                                 <li><span class="font-semibold">大規模資料處理：</span> 在 <strong>871 萬筆</strong> 犯罪資料庫中，以 SQL 進行條件篩選、清理、去識別化與特徵工程。</li>
                                 <li><span class="font-semibold">統計建模：</span> 應用 Kaplan-Meier 與 Cox 比例風險模型，量化並比較不同群體的再犯風險，為政策提供資料支持。</li>
-                                <li><span class="font-semibold">資料擴充：</span> 開發 Python 爬蟲蒐集公開網拍平台交易資料，建立預警清單以補足官方資料的不足。</li>
+            
                             </ul>
                             </li>
 
